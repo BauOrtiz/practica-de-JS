@@ -10,6 +10,8 @@ for (let i = 0; i <= limite; i=i + 1){
     console.log(ingreso + "X" + i + "=" + resultado);
 } */
 
+/*Arreglando el commit*/
+
 
 let productos=parseInt (prompt("Ingrese cuantos productos va a comprar"));
 let precio= 0;
