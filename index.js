@@ -21,3 +21,8 @@ for (let i = 1; i <= productos; i++){
     precio += precioIngresado;
 }
 console.log(precio);
+
+
+let nombre = prompt("Ingrese su nombre")
+
+console.log ("Hola " + nombre)
