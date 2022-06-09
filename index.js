@@ -53,3 +53,7 @@ let Pinta={
     Litros: "750ml",
     Precio: "$270"
 }
+
+let Ingresanombre= prompt("Ingrese su nombre")
+alert("Hola " + Ingresanombre);
+let producto=parseInt (prompt("Ingrese los productos que valla a comprar"))
