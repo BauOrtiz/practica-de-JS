@@ -62,8 +62,11 @@ let Pinta={
 let Ingresanombre= prompt("Ingrese su nombre o salir para finalizar")
 alert("Hola " + Ingresanombre);
 let producto=(prompt("Ingrese el productos que valla a comprar"+ "\n" +
-+"1 " + Pinta.Nombre +"\n" + "2 " +BotellonXl.Nombre +"\n" +"3 "+ BotellaM.Nombre+ "o ingrese salir para finalizar"))
- 
++"1 " + Pinta.Nombre +"\n" + "2 " +BotellonXl.Nombre +"\n" +"3 "+ BotellaM.Nombre+ " o ingrese exit para finalizar"))
+function saludo(Ingresanombre){
+    alert("Hola "+ Ingresanombre)
+}
+
 while (producto !== "salir"){
     let Preciototal = ""
     if (producto === "1"|| producto==="2" || producto==="3"){
@@ -72,18 +75,23 @@ while (producto !== "salir"){
             alert("El precio del producto es de "+Pinta.Precio)
             Preciototal += Pinta.Precio
             break
+            case "2":
+            alert("El precio del producto es de "+BotellonXl.Precio)
+            Preciototal += BotellaXl.Precio
+            break
+            case "3":
+            alert("El precio del producto es de "+BotellaM.Precio)
+            Preciototal += BotellaM.Precio
+            break
 
         }
          producto=(prompt("Ingrese el productos que valla a comprar"+ "\n" +
-+"1 " + Pinta.Nombre +"\n" + "2 " +BotellonXl.Nombre +"\n" +"3 "+ BotellaM.Nombre+ "o ingrese salir para finalizar"))
++"1 " + Pinta.Nombre +"\n" + "2 " +BotellonXl.Nombre +"\n" +"3 "+ BotellaM.Nombre+ " o ingrese exit para finalizar"))
       
     }
-    else {
-        alert ("Usted no ingreso una opcion valida")
-        producto=(prompt("Ingrese el productos que valla a comprar"+ "\n" +
-+"1 " + Pinta.Nombre +"\n" + "2 " +BotellonXl.Nombre +"\n" +"3 "+ BotellaM.Nombre+ "o ingrese salir para finalizar"))
+    else{
+        alert ("Gracias por su compra, el valor es "+ Preciototal)
+        break
     }
 
-
-    
 }
