@@ -96,11 +96,7 @@ while (producto !== "salir"){
 
 } */
 
-document.title = "Clase 9";
-const titulo1 = document.querySelector(".titulo span"),
-  titulo2 = document.querySelector("h2");
-titulo1.innerText = "Clase 9";
-titulo2.innerText = "Eventos en JS";
+
 const contador = document.querySelector("#contador"),
   btnMas = document.querySelector("#aumentar"),
   btnMenos = document.querySelector("#disminuir"),
