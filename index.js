@@ -26,7 +26,7 @@ console.log(precio);
 let nombre = prompt("Ingrese su nombre")
 
 console.log ("Hola " + nombre)*/
-
+/*
 let BotellonXl={
     Nombre: "BotellonXL",
     Litros: "1,9L",
@@ -94,4 +94,59 @@ while (producto !== "salir"){
         break
     }
 
+} */
+
+document.title = "Clase 9";
+const titulo1 = document.querySelector(".titulo span"),
+  titulo2 = document.querySelector("h2");
+titulo1.innerText = "Clase 9";
+titulo2.innerText = "Eventos en JS";
+const contador = document.querySelector("#contador"),
+  btnMas = document.querySelector("#aumentar"),
+  btnMenos = document.querySelector("#disminuir"),
+  ingreso = document.querySelector("#ingreso"),
+  btnGuardar = document.querySelector("#btnGuardar"),
+  mensaje = document.querySelector("#mensaje"),
+  password = document.querySelector("#password");
+//query....
+//const parrafo= document.querySelector(".titulo")
+//const parrafo= document.querySelectorAll(".titulo")
+//const parrafo1= document.querySelector("#titulo p")
+
+//Eventos
+let cont = 0;
+function cambio(num) {
+  cont = cont + num;
+  contador.innerHTML = cont;
+}
+
+/* btnMas.addEventListener("click", () => {
+  cambio(1);
+});
+btnMenos.onclick = () => {
+  cambio(-1);
+};
+btnGuardar.addEventListener("click", () => {
+  mensaje.innerText = ingreso.value;
+  console.log(password.value);
+});
+btnGuardar.addEventListener("mousemove", () => {
+  console.log("Se movio");
+});
+ingreso.addEventListener("keyup", () => {
+  mensaje.innerText = ingreso.value;
+}); */
+//CODIGO JS
+let miFormulario = document.getElementById("formulario");
+miFormulario.addEventListener("submit", validarFormulario);
+
+function validarFormulario(e) {
+  e.preventDefault();
+
+  let formulario = e.target;
+
+  console.log(formulario.children[0].value);
+  console.log(formulario.children[1].value);
+
+  console.log("Formulario Enviado");
 }
